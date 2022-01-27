@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background: coral;
+    height: 250px;
+}
+form{
+    margin-top: auto;
+}
+nav{
+    margin: 35px;
+
+}
+main,footer{
+    text-indent: 155px;
+    display: flex;
+    justify-content: center;
+
+}
+article{
+    display: flex;
+    justify-content: flex-end;
+}
