@@ -11,8 +11,7 @@ div{
     padding: 10px;
     background:gray;
     float: left;
-    text-align: center;
-    font-weight: bold;
+
 
 }
 section{
@@ -25,7 +24,7 @@ section{
 #first div:nth-child(4){
     background: lightgreen;
 }
-#second div:nth-child(1),#second div:nth-child(5){
+#second div:nth-of-type(1),#second div:nth-child(5){
     background: lightblue;
 }
 #second div:nth-child(3){
@@ -47,48 +46,55 @@ section{
 #fifth div:nth-child(even){
     background: pink;
 }
+
+p{
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+   font-size: 30px;
+}
 </style>
 </head>
 <body>
 <section id="first">
-<div>&ltdiv&gt</div>
-<div>&ltdiv&gt</div>
-<div>&ltdiv&gt</div>
-<div>&ltdiv&gt</div>
-<div>&ltdiv&gt</div>
+<div><p>&ltdiv&gt</p></div>
+<div><p>&ltdiv&gt</p></div>
+<div><p>&ltdiv&gt</p></div>
+<div><p>&ltdiv&gt</p></div>
+<div><p>&ltdiv&gt</p></div>
 </section>
 
 <section id="second">
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
 </section>
 
 <section id="third">
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
 </section>
 
 
 <section id="fourth">
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
 </section>
 
 <section id="fifth">
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
-    <div>&ltdiv&gt</div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
+    <div><p>&ltdiv&gt</p></div>
 </section>
 
 </body>
