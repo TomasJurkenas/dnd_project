@@ -3,21 +3,30 @@ header{
     justify-content: space-between;
     background: coral;
     height: 250px;
+  margin: 20px;
 }
 form{
     margin-top: auto;
 }
 nav{
-    margin: 35px;
-
+background: darkgreen;
+    float: left;
+    margin: 20px;
 }
 main,footer{
     text-indent: 155px;
     display: flex;
     justify-content: center;
+    margin: 50px;
+    background: cadetblue;
 
 }
 article{
-    display: flex;
-    justify-content: flex-end;
+
+    float: left;
+    float: bottom;
+}
+footer {
+    float: bottom;
+
 }
