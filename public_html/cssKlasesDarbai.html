@@ -22,6 +22,7 @@ li:nth-child(2n){
     font-weight: normal;
 }
     </style>
+
 </head>
 <body>
 <ul>
@@ -47,5 +48,22 @@ li:nth-child(2n){
         </ul>
     </li>
 </ul>
+
+
+<div id="ats">daugiakampiu kampu skaicius</div>
 </body>
+<script>
+    let n1=5;
+    let n2=6;
+   let s1 = (n1 - 2) *180
+    let s2 = (n2 - 2) *180
+
+    let ats=s1+s2;
+
+document.getElementById('ats').innerHTML ="5 kampu suma :"+s1+'<br>'+
+    "6 kampu suma:"+s2+'<br>'+"Visu daigiakampiu suma:"+ ats;
+
+</script>
+
+
 </html>
