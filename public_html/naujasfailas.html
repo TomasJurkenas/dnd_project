@@ -8,36 +8,12 @@
 <body>
 <h1>sankirtos</h1>
 <p id="ats">atsakymas nerastas</p>
+<p id="duomenys">studento duomenu nera</p>
+<p id="tipas" >tipas nenustatas</p>
+<p id="masyvas">ar yra masyvas</p>
+<p id="objektas">nera objekto</p>
+
+<script src="scriptai/scriptas.js"></script>
 </body>
-<script>
-let a = -5;
-let b = 0;
-let c = -4;
-let d = 4;
-let x ;
-let y ;
 
-if (a > b || d < c||d<a||c>b) {
-    window.alert('sankirta negalima')
-} else{
-
- if (c<=a&& a<= d){
-        x=a;
-
- }
- if(a<=c&&c<=d){
-     x=c;
- }
- if(a<=d&&d<=b){
-     y=d;
- }
- if(b<=d&&b<=a){
-     y=b;
- }
-
-    document.getElementById('ats').innerHTML="rasta sankirta: "+" x:"+x+" y:"+y;
-}
-
-
-</script>
 </html>
