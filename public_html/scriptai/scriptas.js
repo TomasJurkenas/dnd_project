@@ -71,8 +71,22 @@ document.getElementById("objektas").innerHTML=studentas.vardas+" "+studentas.pav
 
 const isvestaMas=Object.keys(studentas);
 const vertesMas= Object.values(studentas);
-const bendrasMas=Object.entries(studentas)
+const bendrasMas=Object.entries(studentas);
 
 console.log(isvestaMas);
 console.log(vertesMas);
 console.log(bendrasMas);
+
+// let elementai=document.querySelectorAll('img');
+//
+// const masyvas= Object.values(elementai);
+// console.log(elementai.length);
+// document.getElementById("uuid").innerHTML="siame puslapyje yra " + elementai.length +" paveiksleliai";
+// // alert(elementai.length);
+// let elementai=document.querySelectorAll('img:nth-of-type(2n)');
+// for(let i = 0; i <= elementai.length; i++){
+//
+//
+//
+// .innerHTML="testas";
+}
