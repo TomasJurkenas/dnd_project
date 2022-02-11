@@ -89,4 +89,4 @@ console.log(bendrasMas);
 //
 //
 // .innerHTML="testas";
-}
+// }
