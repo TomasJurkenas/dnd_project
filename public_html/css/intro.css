@@ -1,0 +1,50 @@
+body{
+    background-color: red;
+    background-image: url("../img/introFonas.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+nav{
+    background-color: red;
+    width: 99%;
+
+}
+
+.register{
+    display: none;
+}
+
+.login{
+    background-color: whitesmoke;
+    border: black solid 1px;
+    align-items: center;
+    width: 300px;
+    min-height: 325px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 5px 5px 3px black;
+    padding: 2%;
+    opacity: 1;
+
+
+}
+form .contIns{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-bottom: 33px;
+
+}
+/*span{*/
+/*    padding: 5px;*/
+/*}*/
+
+footer{
+    background-color: darkblue;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+
+}
