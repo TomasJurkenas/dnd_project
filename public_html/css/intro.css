@@ -1,18 +1,43 @@
 body{
-    background-color: red;
-    background-image: url("../img/introFonas.jpg") ;
-    background-size: cover;
-    background-attachment: fixed;
+    /*background-color: red;*/
+    /*background-image: url("../img/introFonas.jpg") ;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
 
 }
-nav{
+header{
     background-color: red;
     width: 99%;
+    text-align: center;
 
 }
+#container{
+    display: flex;
+    justify-content: center;
+}
 
-.register{
+
+#registrationForm{
+
     display: none;
+    z-index: 1;
+    height: 50%;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    border: black solid 1px;
+    border-radius: 5px;
+    background-color: red;
+    flex-direction: column;
+    margin: 4% auto;
+
+}
+.closeButton, #mainButton{
+    /*position: absolute;*/
+    float: right;
+    padding-right: 15px;
+
+
 }
 
 .login{
@@ -37,9 +62,6 @@ form .contIns{
     padding-bottom: 33px;
 
 }
-/*span{*/
-/*    padding: 5px;*/
-/*}*/
 
 footer{
     background-color: darkblue;

@@ -7,9 +7,14 @@
 
 </head>
 <body>
-<nav>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</nav>
+<header>dndndndndndnd</header>
 
-<form id="registrationForm" action="kursiustiduomenis.php" class="register">
+<nav>
+    <button id="mainButton" onclick="openForm()" >Register</button>
+<div id="container">
+<form id="registrationForm" action="kursiustiduomenis.php" >
+    <button class="closeButton" onclick="closeForm()">Close</button>
+
     <label for="registrationLogin">login</label>
     <input type="text" id="registrationLogin" required>
 
@@ -19,14 +24,15 @@
     <label for="registrationEmail"> email</label>
     <input type="email" id="registrationEmail" required>
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button id="regBtn" type="submit" >Go for an adventure</button>
 
 </form>
-
+</div>
+</nav>
 <form action="kursiustiduomenis.php" class="login">
     <div class="contIns">
 
-    <p>if you dare</p>
+    <p> <strong> Enter if you dare </strong></p>
     <div class="contIns">
             <label for="login">login</label>
             <input type="text" id="login" placeholder="Username" required>
@@ -37,8 +43,8 @@
     </div>
             <button type="submit" class="loginbtn">Login</button>
 
-            <p>You dont have an account join us</p>
-            <a href="#registrationForm">Register</a>
+            <p>Forgot your password? Check for insight</p>
+            <a href="">insight</a>
 
     </div>
 </form>
