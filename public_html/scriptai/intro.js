@@ -10,14 +10,12 @@ let closeForm = function (){
 
 }
 $('#regBtn').click(function(){
+
     $('#regBtn').animate({
         left :'250px',
         opacity: '0,5',
         height :'150px',
         width : '150px'
     });
-    return false;
+
 });
-
-
-
