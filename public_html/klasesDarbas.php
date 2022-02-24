@@ -71,6 +71,16 @@
 //echo 'penkios maziausios temperaturos'. maziausios($temp);
 
 
+include '../src/car.php';
+
+
+$car = new Car(color:'green', currentSpeed:'0 km/h', millage:10);
+echo 'We are driving' . $car->getcolor().'car<br>';
+echo 'Current speed is:' . $car->getCurrentSpeed() . '<br>';
+echo 'Current milage is:' .$car-> getMillage() . '<br>';
+$amount=10;
+echo 'let\'s fill' . $amount. 'litres of gasoline<br>';
+
 
 
 

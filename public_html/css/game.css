@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color: white;
 }
 
 #chooseHero{
@@ -28,9 +28,10 @@ img {
 }
 #infoBoard{
     border-style: ridge;
-
+    background-color:whitesmoke ;
     grid-area: info;
-    grid-area: 1 / col4-start / last-line / 6;
+    max-width:20%;
+
 }
 
 #text{
@@ -45,7 +46,7 @@ img {
     top: 40%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 50px;
     color: white;
     font-weight: bold;
     font-size: 18px;
