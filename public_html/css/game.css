@@ -1,15 +1,14 @@
 body{
-    background-color: white;
+    background-color: grey;
 }
 
-#chooseHero{
-height: 10px;
+.typed {
+    color: red;
 }
-
 #container{
     display: flex;
-    justify-content: space-evenly;
-    height: 70%;
+    justify-content: center;
+    height:80%;
 }
 
 .mySlides {
@@ -25,19 +24,25 @@ img {
     cursor: pointer;
     justify-content: center;
     grid-area: img;
+    margin: 0;
 }
-#infoBoard{
+.infoBoard{
     border-style: ridge;
     background-color:whitesmoke ;
     grid-area: info;
-    max-width:20%;
-
+    max-width:50%;
+    max-height: 50%;
+    margin-top: 50px;
 }
 
 #text{
     border-width: medium;
     border-style: ridge;
-    height: 20%;
+    height: 5%;
+    padding:70px;
+    margin: 0;
+    font-size: 30px;
+    font-family: fantasy;
 }
 
 .prev, .next {
