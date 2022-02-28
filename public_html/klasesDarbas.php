@@ -71,17 +71,30 @@
 //echo 'penkios maziausios temperaturos'. maziausios($temp);
 
 
-include '../src/car.php';
+include '../src/Car.php';
 
+    $car = new Car('green', '0 km/h', 10);
 
-$car = new Car(color:'green', currentSpeed:'0 km/h', millage:10);
-echo 'We are driving' . $car->getcolor().'car<br>';
-echo 'Current speed is:' . $car->getCurrentSpeed() . '<br>';
-echo 'Current milage is:' .$car-> getMillage() . '<br>';
-$amount=10;
-echo 'let\'s fill' . $amount. 'litres of gasoline<br>';
+    $database = new Database();
+    $car = $database->saveData($car);
 
+    echo 'We are driving ' . $car->getColor() . ' car<br>';
+    echo 'Current speed is: ' . $car->getCurrentSpeed() . '<br>';
+    echo 'Current millage is: ' . $car->getMillage() . '<br>';
+    $amount = 10;
+    echo 'Let\'s fill ' . $amount . ' litres of gasoline<br>';
+    $car->fillGasoline($amount);
+    $newSpeed = '50km/h';
+    $car->changeColor('red');
+    echo 'Currently We are driving ' . $car->getColor() . ' car at ' .  $newSpeed . '<br>';
+    $car->setCurrentSpeed($newSpeed);
+    $car->drive(75);
+    // ...
+    $car->drive(75);
+    echo 'Curreen speed is: ' . $car->getCurrentSpeed() . '<br>';
+    echo 'Curreen millage is: ' . $car->getMillage() . '<br>';
 
+    $database->update($car);
 
 
 

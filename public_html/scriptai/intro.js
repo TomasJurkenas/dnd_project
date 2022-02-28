@@ -9,13 +9,22 @@ let closeForm = function (){
     button.style.display="none"
 
 }
-$('#regBtn').click(function(){
+$('#mainButton').click(function(){
 
-    $('#regBtn').animate({
-        left :'250px',
-        opacity: '0,5',
-        height :'150px',
-        width : '150px'
+    $('#registrationForm').animate({
+        opacity: '0,1',
+        height :'auto',
+        width : '300px'
+    });
+
+});
+
+$('.closeButton').click(function(){
+
+    $('#registrationForm').animate({
+        opacity: '0,1',
+        height :'1',
+        width : '1'
     });
 
 });
