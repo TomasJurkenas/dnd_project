@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>dnd project</title>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/inGame.css">
+</head>
+<body>
+<div id="sContainer">
+    <div id="logStatus">
+        <p id="status"></p>
+        <form action="../intro.html">
+            <button id="out">log out</button>
+        </form>
+    </div>
+</div>
+<div id="container">
+    <div id="location">
+        <p>Yondru Village</p>
+    </div>
+    <div id="right" onclick="select_npc('first')">
+            <input type="hidden" id="firstEnemyId">
+            <span id="firstEnemyName">name</span><br>
+            <span id="firstEnemyConst">constitution</span>
+
+    </div>
+
+    <div id="left" onclick="select_npc('sec')">
+        <input type="hidden" id="secEnemyId">
+        <span id="secEnemyName">volcano</span><br>
+        <span id="secEnemyConst">constitution</span>
+
+    </div>
+    <div id="text">
+        <div id="pcCurrentHp"></div>
+        <button onclick="attck('meele')">meele</button>
+        <button onclick="attck('ranged')">range</button>
+
+        <div id="npcCurrentHp" ></div>
+    </div>
+    <div id="inventory">
+        <button id="close">Close inventory</button>
+        <button id="open">Open inventory</button>
+        <p id="invo"></p>
+    </div>
+</div>
+<script src="../scriptai/jquery-3.6.0.min.js"></script>
+<script src="../scriptai/inGame.js"></script>
+</body>
+</html>

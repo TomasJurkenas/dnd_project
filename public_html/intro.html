@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <title>dnd project</title>
     <link rel="stylesheet" href="css/intro.css">
-
+    <link rel="shortcut icon" href="/img/favicon.ico">
 
 </head>
 <body>
-<header>aaaaaaaaaaaaaaaaaaa</header>
+<header ><img src="/img/favicon.ico"></header>
 
 <nav>
 
 <div id="container">
-<form id="registrationForm" action="kursiustiduomenis.php"  >
+<form id="registrationForm" action="registracija.php"  method="POST">
     <button class="closeButton" onclick="closeForm()">X</button>
 <div class="contIns">
     <label for="registrationLogin">login</label>
@@ -24,7 +24,7 @@
     <label for="registrationEmail"> email</label>
     <input type="email" id="registrationEmail" name="regEmail" required>
 </div>
-    <button id="regBtn" type="button" >Go for an adventure</button>
+    <button id="regBtn" type="submit" >Go for an adventure</button>
 
 </form>
 </div>
@@ -42,14 +42,11 @@
 
             <button type="submit" class="loginbtn">Login</button>
 
-            <p>Forgot your password? Check for insight</p>
-            <a href="">insight</a>
-
     </div>
     <button id="mainButton" onclick="openForm()" >Register</button>
 </form>
 
-<footer>vvvvvvvvvvvvvvvvvvvvvvvvvvv</footer>
+
 <script src="scriptai/jquery-3.6.0.min.js"></script>
 <script src="scriptai/intro.js"></script>
 </body>

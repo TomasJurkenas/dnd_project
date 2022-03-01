@@ -13,9 +13,18 @@ try {
             $stmt->bindParam(':login', $_POST['username']);
             $stmt->execute();
             $user = $stmt->fetchObject();
-            if (password_verify($_POST['password'], $user->password)) {
-                $_SESSION['exit'] = $user->id;
-                header("location: portfolio/game.html");
+            if($user) {
+                if (password_verify($_POST['password'], $user->password)) {
+                    $_SESSION['id'] = $user->id;
+                    $_SESSION['login'] = $user->login;
+                    header("location: portfolio/game.html");
+                }
+                else {
+                    header("location: intro.html");
+                }
+            }
+            else {
+                header("location: intro.html");
             }
         }
     }
@@ -24,20 +33,7 @@ try {
     }
 } catch (PDOException $e) {
     // Saugoti i faila
-    $klaida = $e->getMesage();
+    $klaida = $e->getMessage();
     echo "Oi nutiko klaida, bandyk veliau.";
 }
 
-//$regUser = $_POST['regUser'];
-//$regPass = $_POST['regPass'];
-//$regEmail = $_POST['regEmail'];
-//if(!empty($regUser)||!empty($regPass)||!empty($regEmail)){
-//    $host= "localhost";
-//    $dbUsername= "tomas";
-//    $dbPassword="tomas";
-//    $dbname= "project_dnd";
-//    $conn =new PDO("mysql:host=$localhost;dbname=project_dnd", $username, $password);
-//        $INSERT = " INSERT Into `user`(login, password, email)"
-//            values(?,?,?);
-//
-//}

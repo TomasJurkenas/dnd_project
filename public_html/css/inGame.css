@@ -1,0 +1,67 @@
+body{
+    background-color: white;
+}
+
+#sContainer{
+    position: absolute;
+}
+
+
+#logStatus{
+    top: 0;
+    right: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "location location"
+    "right left"
+    "inventory inventory"
+    "text text";
+}
+#location{
+    height: 20%;
+    font-size: medium;
+    grid-area: location;
+    text-align: center;
+}
+
+#right{
+    grid-area: right;
+    margin: 15px 30px 0 10px;
+    height: 300px;
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+#left{
+    grid-area: left;
+    margin: 15px 10px 0 30px;
+    height: 300px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    text-decoration-line: none
+}
+
+#inventory{
+    margin-top: 15px;
+    grid-area: inventory;
+
+}
+
+#text{
+    grid-area: text;
+    border-width: medium;
+    border-style: ridge;
+    padding:70px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: fantasy;
+    height: auto;
+}

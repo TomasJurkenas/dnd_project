@@ -60,16 +60,19 @@
 
 
 $("#text").typer({
-    strings:["Choose your hero",
+    strings:["Welcome to the world of Dunderdak",
+        "The village of Yondru was attacked, we need your help ",
+        "You must recover a stolen artifact",
+        "Now choose your hero",
         "Choose your warrior",
         "Pick up your weapon",
         "Can you just choose?",
         "Okay this is annoying just choose!"],
-    typeSpeed: 200,
+    typeSpeed: 100,
     backspaceSpeed: 20,
     backspaceDelay: 800,
     repeatDelay: 1000,
-    repeat: true,
+    repeat: false,
     autoStart: true,
     startDelay: 100,
 
@@ -96,3 +99,16 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "grid";
     info[slideIndex-1].className += " active";
 }
+function save_char(id, type) {
+    $.post('/savechar.php', {'id': id, 'type': type})
+        .done(function(data) {
+            alert('ok');
+        });
+}
+$.get('/logstatus.php', function(data) {
+    $('#status').html(data);
+});
+$('#out').click(function() {
+    window.location='/logout.php';
+});
+
